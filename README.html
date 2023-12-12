@@ -37,27 +37,18 @@
 <h3 id="sysconfig-notice">SysConfig Notice</h3>
 <p>All examples will soon be supported by SysConfig, a tool that will help you graphically configure your software components. A preview is available today in the examples/syscfg_preview directory. Starting in 3Q 2019, with SDK version 3.30, only SysConfig-enabled versions of examples will be provided. For more information, click <a href="http://www.ti.com/sysconfignotice">here</a>.</p>
 <hr />
-<h1 id="clock">clock</h1>
+<h1 id="hello">hello</h1>
 <hr />
 <h2 id="example-summary">Example Summary</h2>
-<p>This application demonstrates how to use the <code>ti.sysbios.knl.Clock</code> module to construct one-shot and periodic Clock instances. Clock instances are essentially functions that run after a certain number of Clock ticks.</p>
+<p>This application serves as a basic sanity check program for SYS/BIOS. It demonstrates how to print to stdout.</p>
 <h2 id="example-usage">Example Usage</h2>
 <ul>
-<li>Run the application, the two Clock instances will each print messages to the console indicating tick counts when the functions are run.</li>
+<li>Run the application, the string <code>hello world</code> will be printed to the console.</li>
 </ul>
 <h2 id="application-design-details">Application Design Details</h2>
 <ul>
-<li>The application is designed to run two Clock instances, the periodic instance runs twice while the one-shot is only triggered once. The functions that are passed into the Clock instances, <code>clk0Fxn</code> and <code>clk1Fxn</code> respectively are run when the instance reaches its prescribed timeout.</li>
+<li>N/A</li>
 </ul>
-<blockquote>
-<p>To configure the Clock module, such as to set the system’s <code>tickPeriod</code> in microseconds, please see the application’s corresponding configuration file <em>clock.cfg</em>.</p>
-</blockquote>
-<blockquote>
-<p>Note that the timeout value configured for each Clock instance is scaled by the Clock ‘tickPeriod’ value, so the test should run for the same duration across different processor and timer types. Consequently, the displayed tick counts will vary based on the specified Clock ‘tickPeriod’ and the rate and accuracy of the underlying timer.</p>
-</blockquote>
-<p>For example:</p>
-<p>For CC13xx/CC26xx devices with a system <code>tickPeriod</code> of 10 microseconds, the Clock instances will trigger after approximately 500, 1000 and 1100 ticks.</p>
-<p>For an MSP432 running with a system <code>tickPeriod</code> of 1000 microseconds, the Clock instances will trigger after approximately 5, 10 and 11 ticks.</p>
 <h2 id="references">References</h2>
 <ul>
 <li><p>For GNU and IAR users, please read the following website for details about enabling <a href="http://processors.wiki.ti.com/index.php/TI-RTOS_Examples_SemiHosting">semi-hosting</a> in order to view console output.</p></li>
