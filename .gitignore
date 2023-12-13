@@ -1,4 +1,17 @@
 Debug/*
+settings/*
+launches/*
+src/*
+targetConfigs/*
+
+*.cssproject
+*.cproject
+*.project
+*.xdchelp
+
+README.html
+README.md
+
 
 *.libs
 *.obj
