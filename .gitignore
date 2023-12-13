@@ -1,10 +1,10 @@
 Debug/*
-settings/*
-launches/*
+.settings/*
+.launches/*
 src/*
 targetConfigs/*
 
-*.cssproject
+*.ccsproject
 *.cproject
 *.project
 *.xdchelp
